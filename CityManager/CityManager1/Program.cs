@@ -200,16 +200,16 @@ namespace CityManager1
         /// </returns>
         private IEnumerable<Building> GetValuableBuildings(int minValue)
         {
-            List<Building> valuebleBuildings = new List<Building>();
+           
 
             foreach(Building b in buildings)
             {
                 if(b.Value > minValue)
                 {
-                   valuebleBuildings.Add(b);
+                  yield return b;
                 }
             }
-            return valuebleBuildings;
+            
         }
     }
 }

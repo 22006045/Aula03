@@ -17,7 +17,7 @@ namespace CityManager1
 
         public override string ToString()
         {
-            return $"{type, -20}, {Value, 8 : f2},{area, 8 : f2}";
+            return $"{type, -20}, {Value, 8 :f2},{area, 8 :f2}";
         }
 
         public bool Equals(IHasValue other)
