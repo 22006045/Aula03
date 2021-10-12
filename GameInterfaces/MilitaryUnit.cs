@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 namespace GameInterfaces
 {
     public class MilitaryUnit : Unit

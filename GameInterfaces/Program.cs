@@ -1,12 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace GameInterfaces
 {
     class Program
     {
-        IHasValue prev = null;
+        
         static void Main(string[] args)
         {
+            IHasValue prev = null;
             IHasValue [] stuff = new IHasValue[5];
             stuff[0] = new Building("Flat", 25);
             stuff[1] = new MilitaryUnit(3,100,10);
